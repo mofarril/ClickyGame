@@ -1,16 +1,16 @@
 import React from "react";
 
-function Navbar() {
+function Navbar(props) {
   return (
-    <nav class="navbar sticky-top navbar-light bg-light">
-    <div class="container">
-  <a class="navbar-brand" href="/">Clicky Game</a>
+    <nav className="navbar sticky-top navbar-light bg-light">
+    <div className="container">
+  <a className="navbar-brand" href="/">Clicky Game</a>
  
-  <span class="navbar-text">
-      Click an Image to Play
+  <span className="navbar-text mr-2">
+    {props.message}
     </span>
-    <span class="navbar-text score">
-      Score: 0 | Top Score: 0
+    <span className="navbar-text score">
+      Score: {props.currentScore} | Top Score: {props.highScore}
     </span>
   </div>
 </nav>
