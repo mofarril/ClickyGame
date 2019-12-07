@@ -3,11 +3,11 @@ import "../styles/Footer.css";
 
 function Footer() {
   return (
-    <div class="card">
-  <div class="card-header">
+    <div className="card">
+  <div className="card-header">
     Thanks for Playing!
   </div>
-  <div class="card-body">
+  <div className="card-body">
      </div>
 </div>);
 }
