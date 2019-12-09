@@ -2,9 +2,10 @@ import React, { Component } from "react";
 import Wrapper from "./components/Wrapper";
 import Jumbotron from "./components/Jumbotron";
 import Tails from "./components/Tails";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar1";
 import Footer from "./components/Footer"
 import dogs from "./dogs.json";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
   state = {
@@ -65,22 +66,21 @@ class App extends Component {
 
   render() {
     return (
-      // Map over this.state.dogs and render a TailsCard component for each dog object
+
       <Wrapper>
+
         <Navbar
+
           message={this.state.message}
           highScore={this.state.highscore}
           currentScore={this.state.tailClickCount}
         />
 
-
-
         <Jumbotron />
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-3" />
-            <div class="col-sm-6">
-              <div className="card-columns">
+        <div className="container" id="card-container">
+          <div className="row">          
+       <div className="card-columns">
+
                 {this.state.tails.map(dog => (
                   <Tails
                     id={dog.id}
@@ -88,11 +88,12 @@ class App extends Component {
                     name={dog.name}
                     image={dog.image}
                     hanClick={this.handleClick}
+
                   />))}
               </div>
             </div>
           </div>
-        </div>
+        
         <Footer></Footer>
       </Wrapper>
     );

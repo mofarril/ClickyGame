@@ -1,4 +1,11 @@
 .card{
     width: 100%;
     text-align: center;
+    margin: 0px;
+}
+#footer{
+    margin:0px;
+    height: 0px;
+    width: 0px;
+    text-align: center;
 }

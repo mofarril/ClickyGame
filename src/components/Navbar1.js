@@ -1,8 +1,10 @@
 import React from "react";
+import "../styles/Navbar1.css";
 
-function Navbar(props) {
+function Navbar (props) {
   return (
-    <nav className="navbar sticky-top navbar-light bg-light">
+    
+    <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div className="container">
   <a className="navbar-brand" href="/">Clicky Game</a>
  
@@ -14,7 +16,10 @@ function Navbar(props) {
     </span>
   </div>
 </nav>
+
   );
+
 }
+
 
 export default Navbar;
