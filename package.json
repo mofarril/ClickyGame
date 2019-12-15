@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/helper-create-regexp-features-plugin": "^7.7.4",
     "bootstrap": "^4.4.1",
     "jquery": "^3.4.1",
     "popper": "^1.0.1",
